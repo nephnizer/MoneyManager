@@ -1,0 +1,19 @@
+Tema: Orange?
+
+MainPage:
+- Saldo
+- Gastos
+- Botão para adicionar dinheiro
+- Botão para gastar
+- Tabbed menu para Settings, Listas, entre outros
+- Selecionar dia, semana, mes, ano, sempre
+
+Receive/Spend Money Page:
+- Adicionar dinheiro ou remover consoante o escolhido
+- 
+
+Settings:
+- Lingua maybe
+- Dia em que recebe ordenado
+- Apagar dados
+- Sobre a app
