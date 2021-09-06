@@ -46,6 +46,7 @@ namespace MoneyManager
             }
         }
 
+        //When the Spend Button is clicked
         private void spendButton_Clicked(object sender, EventArgs e)
         {
             using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
