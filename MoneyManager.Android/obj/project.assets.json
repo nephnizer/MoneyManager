@@ -2560,11 +2560,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\MoneyManager\\MoneyManager.Android\\MoneyManager.Android.csproj",
+      "projectUniqueName": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager.Android\\MoneyManager.Android.csproj",
       "projectName": "MoneyManager.Android",
-      "projectPath": "C:\\Projetos\\MoneyManager\\MoneyManager.Android\\MoneyManager.Android.csproj",
+      "projectPath": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager.Android\\MoneyManager.Android.csproj",
       "packagesPath": "C:\\Users\\João\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\MoneyManager\\MoneyManager.Android\\obj\\",
+      "outputPath": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2587,8 +2587,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Projetos\\MoneyManager\\MoneyManager\\MoneyManager.csproj": {
-              "projectPath": "C:\\Projetos\\MoneyManager\\MoneyManager\\MoneyManager.csproj"
+            "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager\\MoneyManager.csproj": {
+              "projectPath": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager\\MoneyManager.csproj"
             }
           }
         }

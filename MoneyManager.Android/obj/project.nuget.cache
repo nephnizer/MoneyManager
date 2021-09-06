@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sKsKv4QbKbZ05q1fhEriRFfjqx2ByjwNQ5m3GJjF4TEwNbfRjW2q5freh+VCGaNqyGARTmqUAleLwyg3eKWE0A==",
+  "dgSpecHash": "Sld+8RcI6Sz/95+XfTGtWLZRlHH/JPawuG2cl20gygh3mmf5W2fO0PRsbpLThHHHwjjKQtpAag+hwFxTWY3AYA==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\MoneyManager\\MoneyManager.Android\\MoneyManager.Android.csproj",
+  "projectFilePath": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager.Android\\MoneyManager.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\João\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.9\\microsoft.data.sqlite.core.5.0.9.nupkg.sha512",
     "C:\\Users\\João\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",

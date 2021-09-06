@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XctP2BQmGsgWuXJmarHuOYi7W5BchYJQl/rUoA5FrNbvwl6/EaHklx7OwRwVLm0J/xI7yKD8/OGEJlyHs/STTg==",
+  "dgSpecHash": "Uv41iGjWuUfA2RHO7C69sbj0EmbQlUe8PbyPD4su5z7RS7dGJsNDdeNBrL6as/FuS8zsTAZEsVABz57yvu1gtA==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\MoneyManager\\MoneyManager\\MoneyManager.csproj",
+  "projectFilePath": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager\\MoneyManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\João\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.9\\microsoft.data.sqlite.core.5.0.9.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

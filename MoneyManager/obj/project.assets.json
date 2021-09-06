@@ -859,11 +859,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\MoneyManager\\MoneyManager\\MoneyManager.csproj",
+      "projectUniqueName": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager\\MoneyManager.csproj",
       "projectName": "MoneyManager",
-      "projectPath": "C:\\Projetos\\MoneyManager\\MoneyManager\\MoneyManager.csproj",
+      "projectPath": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager\\MoneyManager.csproj",
       "packagesPath": "C:\\Users\\João\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\MoneyManager\\MoneyManager\\obj\\",
+      "outputPath": "C:\\Projetos\\Github\\Teste\\MoneyManager\\MoneyManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
