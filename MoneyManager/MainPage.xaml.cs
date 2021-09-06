@@ -37,7 +37,7 @@ namespace MoneyManager
 
         private void whenAppears()
         {
-            //The minimum date of the end date picker will always be the day selected on the start date picker  TESTE TESTE
+            //The minimum date of the end date picker will always be the day selected on the start date picker
             endDatePicker.MinimumDate = startDatePicker.Date;
             double sumDoubleAdd = 0.00;
             double sumDoubleSpend = 0.00;
