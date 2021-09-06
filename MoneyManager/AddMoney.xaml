@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoneyManager.AddMoney">
+    
+    <AbsoluteLayout BackgroundColor="#f7f5f2">
+        <BoxView BackgroundColor="Orange"
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 0.30"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>
+        <!--<Label 
+            Text="Adicionar Recebidos" 
+            FontSize="Title"
+            FontFamily="OpenSans-Regular"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.57, 0.3, 0.6, 0.9"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional, WidthProportional, HeightProportional"/>-->
+        <DatePicker
+            x:Name="datePicker"
+            MinimumDate="01/01/2018"
+            MaximumDate="12/31/2099"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.5, 0.05"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+        <Frame 
+            AbsoluteLayout.LayoutBounds="0.5, 0.17, 0.80, 0.12"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional, WidthProportional, HeightProportional"
+            CornerRadius="10">
+            <StackLayout>
+                <Entry 
+                    x:Name="valueText" 
+                    Text="300.20" 
+                    FontSize="Title" 
+                    WidthRequest="300"
+                    TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+        <Button
+            Clicked="btn1_Clicked"
+            x:Name="btn1"
+            Text="1"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.09, 0.36, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btn2_Clicked"
+            x:Name="btn2"
+            Text="2"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.36, 0.36, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btn3_Clicked"
+            x:Name="btn3"
+            Text="3"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.63, 0.36, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btnC_Clicked"
+            x:Name="btnC"
+            Text="C"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.898, 0.36, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btn4_Clicked"
+            x:Name="btn4"
+            Text="4"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.09, 0.485, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btn5_Clicked"
+            x:Name="btn5"
+            Text="5"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.36, 0.485, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btn6_Clicked"
+            x:Name="btn6"
+            Text="6"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.63, 0.485, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btnCE_Clicked"
+            x:Name="btnCE"
+            Text="CE"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.898, 0.485, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btn7_Clicked"
+            x:Name="btn7"
+            Text="7"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.09, 0.609, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btn8_Clicked"
+            x:Name="btn8"
+            Text="8"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.36, 0.609, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btn9_Clicked"
+            x:Name="btn9"
+            Text="9"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.63, 0.609, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            Clicked="btnDot_Clicked"
+            x:Name="btnDot"
+            Text="."
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.898, 0.609, 0.20, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            x:Name="btn0"
+            Text="0"
+            BackgroundColor="#f7f5f2"
+            BorderColor="Orange"
+            BorderWidth="1"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.479, 0.733, 0.845, 0.10"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Entry 
+            x:Name="textNota"
+            Placeholder="Nota" 
+            FontSize="Title" 
+            TextColor="Black"
+            PlaceholderColor="LightGray"
+            AbsoluteLayout.LayoutBounds="0.5, 0.845, 0.87, 0.1"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            x:Name="addButton"
+            Text="Adicionar"
+            Clicked="addButton_Clicked"
+            AbsoluteLayout.LayoutBounds="0.5, 0.97, 0.87, 0.1"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button
+            x:Name="spendButton"
+            Text="Gastar"
+            Clicked="spendButton_Clicked"
+            AbsoluteLayout.LayoutBounds="0.5, 0.97, 0.87, 0.1"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+    </AbsoluteLayout>
+</ContentPage>

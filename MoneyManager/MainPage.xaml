@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoneyManager.MainPage">
+
+    <AbsoluteLayout BackgroundColor="#f2eee9">
+        <BoxView BackgroundColor="Orange"
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 0.4"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>
+        <Label 
+            Text="Placeholder" 
+            FontSize="Title"
+            FontFamily="OpenSans-Regular"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.55, 0.25, 0.4, 0.8"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>
+        <Label
+            Text="Ínicio"
+            FontSize="20"
+            FontFamily="OpenSans-Regular"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.24, 0.15"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+        <DatePicker
+            x:Name="startDatePicker"
+            DateSelected="startDatePicker_DateSelected"
+            MinimumDate="01/01/2018"
+            MaximumDate="12/31/2099"
+            TextColor="White"
+            AbsoluteLayout.LayoutBounds="0.20, 0.20"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+        <Label
+            Text="Fim"
+            FontSize="20"
+            FontFamily="OpenSans-Regular"
+            TextColor="Black"
+            AbsoluteLayout.LayoutBounds="0.73, 0.15"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+        <DatePicker
+            x:Name="endDatePicker"
+            DateSelected="endDatePicker_DateSelected"
+            MaximumDate="12/31/2099"
+            TextColor="White"
+            AbsoluteLayout.LayoutBounds="0.80, 0.20"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+        <Frame 
+            AbsoluteLayout.LayoutBounds="0.5, 0.38, 0.9, 0.2"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional, WidthProportional, HeightProportional"
+            CornerRadius="10">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Saldo:" FontSize="18" TextColor="Black"/>
+                    <Label x:Name="saldoText" Text="0,00€" FontSize="18" TextColor="Black"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label x:Name="dateSaldoText" Text="Placeholder" FontSize="18" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <Frame 
+            AbsoluteLayout.LayoutBounds="0.5, 0.66, 0.9, 0.2"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional, WidthProportional, HeightProportional"
+            CornerRadius="10">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Gastos:" FontSize="18" TextColor="Black"/>
+                    <Label x:Name="gastosText" Text="0,00€" FontSize="18" TextColor="Black"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label x:Name="dateGastosText" Text="Placeholder" FontSize="18" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <Button Text="Adicionar" 
+                AbsoluteLayout.LayoutBounds="0.15, 0.94, 0.35, 0.2"
+                AbsoluteLayout.LayoutFlags="XProportional, YProportional, WidthProportional, HeightProportional"
+                CornerRadius="1000"
+                x:Name="btnAdd"
+                BackgroundColor="#f7f5f2"
+                BorderColor="Orange"
+                BorderWidth="1"
+                TextColor="Black"
+                Clicked="btnAdd_Clicked"/>
+        <Button Text="Gastar" 
+                AbsoluteLayout.LayoutBounds="0.85, 0.94, 0.35, 0.2"
+                AbsoluteLayout.LayoutFlags="XProportional, YProportional, WidthProportional, HeightProportional"
+                CornerRadius="1000"
+                x:Name="btnRemove"
+                BackgroundColor="#f7f5f2"
+                BorderColor="Orange"
+                BorderWidth="1"
+                TextColor="Black"
+                Clicked="btnRemove_Clicked"/>
+    </AbsoluteLayout>
+</ContentPage>
