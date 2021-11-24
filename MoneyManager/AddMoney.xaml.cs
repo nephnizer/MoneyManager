@@ -27,6 +27,7 @@ namespace MoneyManager
             addButton.IsVisible = false;
         }
 
+        //When the Add Button is clicked
         private void addButton_Clicked(object sender, EventArgs e)
         {
             using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
@@ -34,9 +35,9 @@ namespace MoneyManager
                 if (valueText.Text != "")
                 {
                     int getDate = datePicker.Date.Year * 10000 + datePicker.Date.Month * 100 + datePicker.Date.Day;
-                    MoneyAdded moneyAdded = new MoneyAdded
+                    MoneyHistory moneyAdded = new MoneyHistory
                     {
-                        AddedMoney = double.Parse(valueText.Text, CultureInfo.InvariantCulture),
+                        Money = double.Parse(valueText.Text, CultureInfo.InvariantCulture),
                         DateTime = getDate,
                         Note = textNota.Text
                     };
@@ -54,9 +55,9 @@ namespace MoneyManager
                if (valueText.Text != "")
                {
                     int getDate = datePicker.Date.Year * 10000 + datePicker.Date.Month * 100 + datePicker.Date.Day;
-                    MoneySpent moneySpent = new MoneySpent()
+                    MoneyHistory moneySpent = new MoneyHistory()
                    {
-                       SpentMoney = double.Parse(valueText.Text, CultureInfo.InvariantCulture),
+                       Money = -double.Parse(valueText.Text, CultureInfo.InvariantCulture),
                        DateTime = getDate,
                        Note = textNota.Text
                    };

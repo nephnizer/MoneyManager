@@ -43,36 +43,37 @@ namespace MoneyManager
             double sumDoubleSpend = 0.00;
             using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
             {
-                //conn.DropTable<MoneyAdded>();
-                //conn.DropTable<MoneySpent>();
-                conn.CreateTable<MoneyAdded>();
-                conn.CreateTable<MoneySpent>();
+                //conn.DropTable<ShoppingList>();
+                conn.CreateTable<MoneyHistory>();
+                conn.CreateTable<ShoppingList>();
                 int getDateStart = startDatePicker.Date.Year * 10000 + startDatePicker.Date.Month * 100 + startDatePicker.Date.Day;
                 int getDateEnd = endDatePicker.Date.Year * 10000 + endDatePicker.Date.Month * 100 + endDatePicker.Date.Day;
                 dateSaldoText.Text = DateTime.Now.ToString("dd/MM/yyyy");
                 dateGastosText.Text = DateTime.Now.ToString("dd/MM/yyyy");
-                var addMoneyVar = conn.Query<MoneyAdded>("SELECT * FROM MoneyAdded WHERE DateTime BETWEEN " + getDateStart + " AND " + getDateEnd);
-                var spendMoneyVar = conn.Query<MoneySpent>("SELECT * FROM MoneySpent WHERE DateTime BETWEEN " + getDateStart + " AND " + getDateEnd);
-                if (addMoneyVar.Count != 0)
+                var moneyVar = conn.Query<MoneyHistory>("SELECT * FROM MoneyHistory WHERE DateTime BETWEEN " + getDateStart + " AND " + getDateEnd);
+                if (moneyVar.Count != 0)
                 {
-                    foreach (MoneyAdded moneyAdded in addMoneyVar)
+                    foreach (MoneyHistory moneyHistory in moneyVar)
                     {
-                        sumDoubleAdd += moneyAdded.AddedMoney;
+                        if (moneyHistory.Money.ToString().Contains("-"))
+                        {
+                            sumDoubleSpend += moneyHistory.Money;
+                            string replaceSum = sumDoubleSpend.ToString().Replace(".", ",");
+                            gastosText.Text = replaceSum + "€";
+                        }
+                        else
+                        {
+                            sumDoubleAdd += moneyHistory.Money;
+                            string replaceSum = sumDoubleAdd.ToString().Replace(".", ",");
+                            saldoText.Text = replaceSum + "€";
+                        }
                     }
-                    string replaceSum = sumDoubleAdd.ToString().Replace(".", ",");
-                    saldoText.Text = replaceSum + "€";
-                } 
-                else { saldoText.Text = "0,00€"; }
-                if (spendMoneyVar.Count != 0)
-                {
-                    foreach (MoneySpent moneySpent in spendMoneyVar)
-                    {
-                        sumDoubleSpend += moneySpent.SpentMoney;
-                    }
-                    string replaceSum = sumDoubleSpend.ToString().Replace(".", ",");
-                    gastosText.Text = replaceSum + "€";
                 }
-                else { gastosText.Text = "0,00€"; }
+                else
+                {
+                    saldoText.Text = "0,00€";
+                    gastosText.Text = "0,00€";
+                }
             }
         }
 

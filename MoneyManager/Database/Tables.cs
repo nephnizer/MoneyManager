@@ -6,19 +6,21 @@ namespace MoneyManager.Database
 {
     public class Tables
     {
-        public class MoneyAdded
+
+        public class MoneyHistory
         {
-            //public int Money_ID { get; set; }
-            public double AddedMoney { get; set; }
+            public double Money { get; set; }
             public int DateTime { get; set; }
             public string Note { get; set; }
         }
 
-        public class MoneySpent
+        public class ShoppingList
         {
-            public double SpentMoney { get; set; }
-            public int DateTime { get; set; }
-            public string Note { get; set; }
+            public string ListName { get; set; }
+            public string ProductName { get; set; }
+            public int Quantity { get; set; }
+            public bool ProductChecked { get; set; }
+            public bool ListDone { get; set; }
         }
     }
 }

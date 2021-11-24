@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoneyManager.ShopListFolder.AddProduct">
+    <AbsoluteLayout BackgroundColor="#f7f5f2">
+        <Entry 
+            x:Name="entryProdName"
+            Placeholder="Introduza nome do produto"
+            FontSize="16"
+            AbsoluteLayout.LayoutBounds="0.25, 0.15, 0.50, 0.15"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Entry
+            x:Name="entryQuantity"
+            Placeholder="Introduza a quantidade do produto"
+            Keyboard="Numeric"
+            FontSize="16"
+            AbsoluteLayout.LayoutBounds="0.25, 0.30, 0.50, 0.15"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+        <Button 
+            x:Name="btnAdd"
+            Text="Adicionar"
+            FontSize="16"
+            Clicked="btnAdd_Clicked"
+            AbsoluteLayout.LayoutBounds="0.25, 0.50, 0.50, 0.15"
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional, HeightProportional"/>
+    </AbsoluteLayout>
+</ContentPage>

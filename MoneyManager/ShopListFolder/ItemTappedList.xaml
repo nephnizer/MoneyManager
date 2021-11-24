@@ -1,26 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MoneyManager.Histórico">
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="MoneyManager.ItemTappedList">
     <ContentPage.Content>
         <StackLayout>
-            <ListView 
-                x:Name="HistoricView" 
-                Margin="15, 50, 15, 0"
-                GroupDisplayBinding="{Binding DateTitle}">
+            <ListView x:Name="ListView" Margin="15, 50, 15, 0">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="120">
                             <Grid Padding="10">
                                 <StackLayout VerticalOptions="Center">
                                     <Label VerticalOptions="Center"
-                                           Text="{Binding AddedMoney}" TextColor="Black" FontSize="16"/>
+                                           Text="{Binding ProductName}" TextColor="Black" FontSize="16"/>
                                     <Label VerticalOptions="Center"
-                                           Text="{Binding SpentMoney}" TextColor="Black" FontSize="16"/>
-                                    <Label VerticalOptions="Center"
-                                           Text="{Binding DateTime}" TextColor="Black" FontSize="16"/>
-                                    <Label VerticalOptions="Center"
-                                           Text="{Binding Note}" TextColor="Black" FontSize="16"/>
+                                           Text="{Binding Quantity}" TextColor="Black" FontSize="16"/>
+                                    <input:CheckBox Type="Check" IsChecked="{Binding ProductChecked}" CheckChanged="CheckBox_CheckChanged"/>
                                 </StackLayout>
                             </Grid>
                         </ViewCell>
