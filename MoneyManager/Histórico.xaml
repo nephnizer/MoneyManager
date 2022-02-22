@@ -3,30 +3,76 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MoneyManager.Histórico">
     <ContentPage.Content>
-        <StackLayout>
+        <AbsoluteLayout BackgroundColor="#f2eee9" VerticalOptions="FillAndExpand">
+            <BoxView BackgroundColor="#1F77DA"
+                     AbsoluteLayout.LayoutBounds="0, 0, 1, 0.30"
+                     AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>
+            <Label 
+                Text="Histórico" 
+                FontSize="Title"
+                FontFamily="OpenSans-Regular"
+                TextColor="Black"
+                AbsoluteLayout.LayoutBounds="0.63, 0.25, 0.4, 0.8"
+                AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>
+            <Button Text="Adicionar" 
+                Clicked="btnAdd_Clicked"
+                AbsoluteLayout.LayoutBounds="0.20, 0.15, 0.25, 0.14"
+                AbsoluteLayout.LayoutFlags="XProportional, YProportional, WidthProportional, HeightProportional"
+                CornerRadius="1000"
+                x:Name="btnAdd"
+                BackgroundColor="#f7f5f2"
+                TextColor="Black"/>
+            <Button Text="Gastar" 
+                Clicked="btnRemove_Clicked"
+                AbsoluteLayout.LayoutBounds="0.80, 0.15, 0.25, 0.14"
+                AbsoluteLayout.LayoutFlags="XProportional, YProportional, WidthProportional, HeightProportional"
+                CornerRadius="1000"
+                x:Name="btnRemove"
+                BackgroundColor="#f7f5f2"
+                TextColor="Black"/>
             <ListView 
                 x:Name="HistoricView" 
-                Margin="15, 50, 15, 0"
-                GroupDisplayBinding="{Binding DateTitle}">
+                Margin="15, 50, 15, -45"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="True"
+                GroupDisplayBinding="{Binding DateTitle}"
+                AbsoluteLayout.LayoutBounds="0.5, 0.7, 1, 0.63"
+                AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"
+                >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell Height="120">
+                        <ViewCell>
                             <Grid Padding="10">
-                                <StackLayout VerticalOptions="Center">
-                                    <Label VerticalOptions="Center"
-                                           Text="{Binding AddedMoney}" TextColor="Black" FontSize="16"/>
-                                    <Label VerticalOptions="Center"
-                                           Text="{Binding SpentMoney}" TextColor="Black" FontSize="16"/>
-                                    <Label VerticalOptions="Center"
-                                           Text="{Binding DateTime}" TextColor="Black" FontSize="16"/>
-                                    <Label VerticalOptions="Center"
-                                           Text="{Binding Note}" TextColor="Black" FontSize="16"/>
-                                </StackLayout>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Frame CornerRadius="5" BackgroundColor="LightGray">
+                                    <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand">
+                                        <Label x:Name="labelMoney" 
+                                           Text="{Binding Money}" 
+                                           TextColor="Black" 
+                                           FontSize="16"/>
+                                        <Label x:Name="labelDateTime" 
+                                           Text="{Binding DateTime}" 
+                                           TextColor="Black" 
+                                           FontSize="16"/>
+                                        <Label x:Name="labelNote" 
+                                           Text="{Binding Note}" 
+                                           TextColor="Black" 
+                                           FontSize="16"/>
+                                    </StackLayout>
+                                </Frame>
+                                <!--<BoxView Grid.Row="1" 
+                                         VerticalOptions="Center"
+                                         HorizontalOptions="Center"
+                                         HeightRequest="1"
+                                         WidthRequest="300"
+                                         Color="Black"/>-->
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

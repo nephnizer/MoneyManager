@@ -3,10 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MoneyManager.MainPage">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Example Item"
+                 IconImageSource="example_icon.png"
+                 Order="Primary"
+                 Priority="0" 
+                 Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
     <AbsoluteLayout BackgroundColor="#f2eee9">
-        <BoxView BackgroundColor="Orange"
+        <BoxView x:Name="bdGradient" BackgroundColor="#1F77DA" Scale="1" AnchorX="1" AnchorY="0"
             AbsoluteLayout.LayoutBounds="0, 0, 1, 0.4"
-            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional">
+            <!--<BoxView.Background>
+                <LinearGradientBrush StartPoint="0.5,1" EndPoint="1,0.5">
+                    <GradientStop Color="White" Offset="0.1"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                    <GradientStop Color="Orange" Offset="1.0"/>
+                </LinearGradientBrush>
+            </BoxView.Background>-->
+        </BoxView>
         <Label 
             Text="Placeholder" 
             FontSize="Title"
@@ -15,7 +31,7 @@
             AbsoluteLayout.LayoutBounds="0.55, 0.25, 0.4, 0.8"
             AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>
         <Label
-            Text="Ínicio"
+            Text="Início"
             FontSize="20"
             FontFamily="OpenSans-Regular"
             TextColor="Black"

@@ -10,7 +10,7 @@ namespace MoneyManager.Database
         public class MoneyHistory
         {
             public double Money { get; set; }
-            public int DateTime { get; set; }
+            public string DateTime { get; set; }
             public string Note { get; set; }
         }
 
