@@ -23,13 +23,13 @@
                 </LinearGradientBrush>
             </BoxView.Background>-->
         </BoxView>
-        <Label 
+        <!--<Label 
             Text="Placeholder" 
             FontSize="Title"
             FontFamily="OpenSans-Regular"
             TextColor="Black"
             AbsoluteLayout.LayoutBounds="0.55, 0.25, 0.4, 0.8"
-            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>
+            AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"/>-->
         <Label
             Text="Início"
             FontSize="20"
@@ -93,7 +93,7 @@
                 CornerRadius="1000"
                 x:Name="btnAdd"
                 BackgroundColor="#f7f5f2"
-                BorderColor="Orange"
+                BorderColor="#2196F3"
                 BorderWidth="1"
                 TextColor="Black"
                 Clicked="btnAdd_Clicked"/>
@@ -103,7 +103,7 @@
                 CornerRadius="1000"
                 x:Name="btnRemove"
                 BackgroundColor="#f7f5f2"
-                BorderColor="Orange"
+                BorderColor="#2196F3"
                 BorderWidth="1"
                 TextColor="Black"
                 Clicked="btnRemove_Clicked"/>

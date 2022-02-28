@@ -14,14 +14,14 @@ namespace MoneyManager
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new TabbedPage1());
         }
 
         public App(string filePath)
         {
             InitializeComponent();
             FilePath = filePath;
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new TabbedPage1());
         }
 
         protected override void OnStart()

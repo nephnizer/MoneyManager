@@ -105,7 +105,7 @@ namespace MoneyManager
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Histórico());
+            Navigation.PushAsync(new TabbedPage1());
         }
     }
 }
